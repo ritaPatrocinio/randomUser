@@ -1,0 +1,12 @@
+.User {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 0% 5%;
+}
