@@ -11,6 +11,7 @@ useEffect(() => {
   fetch('https://randomuser.me/api/?results=10')
   .then(response => response.json())
   .then(response => {
+    console.log(JSON.stringify(response));
     if(!response.results){
       return
       }
