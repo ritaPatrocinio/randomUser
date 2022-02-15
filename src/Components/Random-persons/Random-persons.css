@@ -1,0 +1,51 @@
+.App {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    padding: 1% 3%;
+  }
+  
+  h1 {
+    font-size: 150%;
+    margin: 3% 2%;
+  }
+  
+  .More {
+    float: right;
+      cursor: pointer;
+      margin: 3% 0%;
+      border-radius: 5px;
+      padding: 5px 1%;
+      color: white;
+      font-size: 70%;
+      font-weight: 500;
+      background: transparent;
+      border: 2px solid #ffffff96;
+      width: 40%;
+  }
+  
+  .More:hover {
+    background: #000a41;
+  }
+  
+  .UserList {
+    width: -webkit-fill-available;
+    margin: auto;
+}
+
+.User {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 0% 2%;
+}

@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import {useState, useEffect} from 'react';
 import {UserList} from './Components/UserList/UserList';
@@ -11,7 +10,6 @@ useEffect(() => {
   fetch('https://randomuser.me/api/?results=10')
   .then(response => response.json())
   .then(response => {
-    console.log(JSON.stringify(response));
     if(!response.results){
       return
       }
@@ -26,9 +24,10 @@ useEffect(() => {
   return (
     <div className="App">
       <header className="App-header">
-      <UserList data={data}></UserList>
-      <button onClick={LoadMore}>Load More</button>
+        <h1>Users</h1>
       </header>
+      <UserList data={data}></UserList>
+      <button onClick={LoadMore} className='More'>Load More</button>
     </div>
   );
 }
